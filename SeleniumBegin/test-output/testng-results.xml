@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-10-09T11:06:47Z" name="Default suite" finished-at="2018-10-09T11:06:47Z" duration-ms="40">
+    <groups>
+    </groups>
+    <test started-at="2018-10-09T11:06:47Z" name="Default test" finished-at="2018-10-09T11:06:47Z" duration-ms="40">
+      <class name="TestNG.BasicAnnotations">
+        <test-method is-config="true" signature="test01()[pri:0, instance:TestNG.BasicAnnotations@399c4be1]" started-at="2018-10-09T11:06:47Z" name="test01" finished-at="2018-10-09T11:06:47Z" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01 -->
+        <test-method is-config="true" signature="test03()[pri:0, instance:TestNG.BasicAnnotations@399c4be1]" started-at="2018-10-09T11:06:47Z" name="test03" finished-at="2018-10-09T11:06:47Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03 -->
+        <test-method is-config="true" signature="test04()[pri:0, instance:TestNG.BasicAnnotations@399c4be1]" started-at="2018-10-09T11:06:47Z" name="test04" finished-at="2018-10-09T11:06:47Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test04 -->
+        <test-method is-config="true" signature="test05()[pri:0, instance:TestNG.BasicAnnotations@399c4be1]" started-at="2018-10-09T11:06:47Z" name="test05" finished-at="2018-10-09T11:06:47Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test05 -->
+        <test-method signature="login()[pri:0, instance:TestNG.BasicAnnotations@399c4be1]" started-at="2018-10-09T11:06:47Z" name="login" finished-at="2018-10-09T11:06:47Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="test06()[pri:0, instance:TestNG.BasicAnnotations@399c4be1]" started-at="2018-10-09T11:06:47Z" name="test06" finished-at="2018-10-09T11:06:47Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test06 -->
+        <test-method is-config="true" signature="test05()[pri:0, instance:TestNG.BasicAnnotations@399c4be1]" started-at="2018-10-09T11:06:47Z" name="test05" finished-at="2018-10-09T11:06:47Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test05 -->
+        <test-method signature="logout()[pri:0, instance:TestNG.BasicAnnotations@399c4be1]" started-at="2018-10-09T11:06:47Z" name="logout" finished-at="2018-10-09T11:06:47Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="test06()[pri:0, instance:TestNG.BasicAnnotations@399c4be1]" started-at="2018-10-09T11:06:47Z" name="test06" finished-at="2018-10-09T11:06:47Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test06 -->
+        <test-method is-config="true" signature="test08()[pri:0, instance:TestNG.BasicAnnotations@399c4be1]" started-at="2018-10-09T11:06:47Z" name="test08" finished-at="2018-10-09T11:06:47Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test08 -->
+        <test-method is-config="true" signature="test07()[pri:0, instance:TestNG.BasicAnnotations@399c4be1]" started-at="2018-10-09T11:06:47Z" name="test07" finished-at="2018-10-09T11:06:47Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test07 -->
+        <test-method is-config="true" signature="test11()[pri:0, instance:TestNG.BasicAnnotations@399c4be1]" started-at="2018-10-09T11:06:47Z" name="test11" finished-at="2018-10-09T11:06:47Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11 -->
+        <test-method is-config="true" signature="test09()[pri:0, instance:TestNG.BasicAnnotations@399c4be1]" started-at="2018-10-09T11:06:47Z" name="test09" finished-at="2018-10-09T11:06:47Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test09 -->
+      </class> <!-- TestNG.BasicAnnotations -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
