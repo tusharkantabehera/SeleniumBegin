@@ -19,7 +19,7 @@ public class Base {
 	
 	public static void openBrowser()
 	{
-		System.setProperty("webdriver.chrome.driver", "D:\\Software\\chromedriver_win32 (1)\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\resources\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.get("https://gmail.com");
 		
@@ -30,7 +30,7 @@ public class Base {
 		
 		String failedTestNAme = r.getName();
 		File scr=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File dst = new File("./screenshot/"+failedTestNAme+timestamp()+"_failed.png");
+		File dst = new File(".\\screenshots\\"+failedTestNAme+timestamp()+"_failed.png");
 		System.out.println("Screenshot taken");
 		try
 		{
