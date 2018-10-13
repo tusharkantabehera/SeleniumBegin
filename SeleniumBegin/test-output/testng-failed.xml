@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DifferentOperations.HeadlessChrome">
+      <class name="DifferentOperations.JavascriptExecuterHandle">
         <methods>
+          <include name="displayAlert"/>
           <include name="openUrl"/>
-          <include name="login"/>
+          <include name="quitBrowser"/>
         </methods>
-      </class> <!-- DifferentOperations.HeadlessChrome -->
+      </class> <!-- DifferentOperations.JavascriptExecuterHandle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
