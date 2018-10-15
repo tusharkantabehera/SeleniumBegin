@@ -50,6 +50,14 @@ public class JavascriptExecutorHandle {
 		}
 		
 		@Test(priority=3)
+		public void scroolIntoForgotPassword() throws InterruptedException
+		{
+			WebElement element=driver.findElement(By.linkText("Forgot Password?"));
+			scroolIntoView(driver, element);
+			Thread.sleep(3000);
+		}
+		
+		@Test(priority=4)
 		public void Login()
 		{
 			driver.findElement(By.name("username")).sendKeys("tusharkec143");
@@ -59,31 +67,31 @@ public class JavascriptExecutorHandle {
 			takeScreenshot();
 		}
 		
-		@Test(priority=4)
+		@Test(priority=5)
 		public void refresh()
 		{
 			refreshJS(driver);
 		}
 		
-		@Test(priority=5)
+		@Test(priority=6)
 		public void getTitle()
 		{
 			System.out.println(getTitleByJS(driver));
 		}
 		
-		@Test(priority=6)
+		@Test(priority=7)
 		public void printInnerText()
 		{
 			System.out.println(getPageInnerTextByJS(driver));
 		}
 		
-		@Test(priority=7)
+		@Test(priority=8)
 		public void scroll() 
 		{
 			scrollPageDownByJS(driver);
 			takeScreenshot();
 		}
-		@Test(priority=8)
+		@Test(priority=9)
 		public void displayAlert() throws InterruptedException
 		{
 			generateAlert(driver, "There is an issue");
@@ -95,6 +103,10 @@ public class JavascriptExecutorHandle {
 		{
 			driver.quit();
 		}
+		
+		
+		
+		
 		
 		//For highlighting a particular element with JavascriptExecutor
 		public static void flash(WebDriver driver,WebElement element) throws InterruptedException
@@ -141,7 +153,7 @@ public class JavascriptExecutorHandle {
 			js.executeScript("history.go(0)");
 		}
 		
-		//
+		//For get the tite of the page with JavascriprExecutor
 		public static String getTitleByJS(WebDriver driver)
 		{
 			JavascriptExecutor js=(JavascriptExecutor)driver;
@@ -149,6 +161,7 @@ public class JavascriptExecutorHandle {
 			return title;
 		}
 		
+		//For get inner text of the page with JavascriprExecutor
 		public static String getPageInnerTextByJS(WebDriver driver)
 		{
 			JavascriptExecutor js=(JavascriptExecutor)driver;
@@ -156,12 +169,18 @@ public class JavascriptExecutorHandle {
 			return innerText;
 		}
 		
+		//For scroll down the page with JavascriprExecutor
 		public static void scrollPageDownByJS(WebDriver driver)
 		{
 			JavascriptExecutor js=(JavascriptExecutor)driver;
 			js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
 		}
 		
+		public static void scroolIntoView(WebDriver driver,WebElement element)
+		{
+			JavascriptExecutor js=(JavascriptExecutor)driver;
+			js.executeScript("arguments[0].scrollIntoView(true);", element);
+		}
 		//For taking screenshot
 		public static void takeScreenshot()
 		{
