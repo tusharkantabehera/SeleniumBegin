@@ -1,53 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-10-13T09:20:30Z" name="Default suite" finished-at="2018-10-13T09:21:13Z" duration-ms="42729">
+  <suite started-at="2018-10-15T14:02:22Z" name="Default suite" finished-at="2018-10-15T14:02:39Z" duration-ms="16601">
     <groups>
     </groups>
-    <test started-at="2018-10-13T09:20:30Z" name="Default test" finished-at="2018-10-13T09:21:13Z" duration-ms="42729">
-      <class name="DifferentOperations.JavascriptExecutorHandle">
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:DifferentOperations.JavascriptExecutorHandle@17497425]" started-at="2018-10-13T09:20:30Z" name="openUrl" finished-at="2018-10-13T09:20:42Z" duration-ms="11637" status="PASS">
+    <test started-at="2018-10-15T14:02:22Z" name="Default test" finished-at="2018-10-15T14:02:39Z" duration-ms="16601">
+      <class name="DifferentOperations.CalanderHandlingJavaScript">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:DifferentOperations.CalanderHandlingJavaScript@485966cc]" started-at="2018-10-15T14:02:22Z" name="openUrl" finished-at="2018-10-15T14:02:30Z" duration-ms="8005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="highlightLoginButton()[pri:1, instance:DifferentOperations.JavascriptExecutorHandle@17497425]" started-at="2018-10-13T09:20:42Z" name="highlightLoginButton" finished-at="2018-10-13T09:20:49Z" duration-ms="7683" status="PASS">
+        <test-method signature="selectDateByJSTest()[pri:0, instance:DifferentOperations.CalanderHandlingJavaScript@485966cc]" started-at="2018-10-15T14:02:30Z" name="selectDateByJSTest" finished-at="2018-10-15T14:02:39Z" duration-ms="8573" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- highlightLoginButton -->
-        <test-method signature="drawBorderLoginButton()[pri:2, instance:DifferentOperations.JavascriptExecutorHandle@17497425]" started-at="2018-10-13T09:20:49Z" name="drawBorderLoginButton" finished-at="2018-10-13T09:20:55Z" duration-ms="5842" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- drawBorderLoginButton -->
-        <test-method signature="Login()[pri:3, instance:DifferentOperations.JavascriptExecutorHandle@17497425]" started-at="2018-10-13T09:20:55Z" name="Login" finished-at="2018-10-13T09:21:04Z" duration-ms="8549" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="refresh()[pri:4, instance:DifferentOperations.JavascriptExecutorHandle@17497425]" started-at="2018-10-13T09:21:04Z" name="refresh" finished-at="2018-10-13T09:21:08Z" duration-ms="4399" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- refresh -->
-        <test-method signature="getTitle()[pri:5, instance:DifferentOperations.JavascriptExecutorHandle@17497425]" started-at="2018-10-13T09:21:08Z" name="getTitle" finished-at="2018-10-13T09:21:08Z" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getTitle -->
-        <test-method signature="printInnerText()[pri:6, instance:DifferentOperations.JavascriptExecutorHandle@17497425]" started-at="2018-10-13T09:21:08Z" name="printInnerText" finished-at="2018-10-13T09:21:08Z" duration-ms="15" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- printInnerText -->
-        <test-method signature="scroll()[pri:7, instance:DifferentOperations.JavascriptExecutorHandle@17497425]" started-at="2018-10-13T09:21:08Z" name="scroll" finished-at="2018-10-13T09:21:08Z" duration-ms="329" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scroll -->
-        <test-method signature="displayAlert()[pri:8, instance:DifferentOperations.JavascriptExecutorHandle@17497425]" started-at="2018-10-13T09:21:08Z" name="displayAlert" finished-at="2018-10-13T09:21:11Z" duration-ms="3014" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- displayAlert -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:DifferentOperations.JavascriptExecutorHandle@17497425]" started-at="2018-10-13T09:21:11Z" name="quitBrowser" finished-at="2018-10-13T09:21:13Z" duration-ms="1210" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- DifferentOperations.JavascriptExecutorHandle -->
+        </test-method> <!-- selectDateByJSTest -->
+      </class> <!-- DifferentOperations.CalanderHandlingJavaScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
