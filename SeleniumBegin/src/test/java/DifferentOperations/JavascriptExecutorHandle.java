@@ -176,6 +176,7 @@ public class JavascriptExecutorHandle {
 			js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
 		}
 		
+		//For scroll the page to the perticular element with JavascriprExecutor
 		public static void scroolIntoView(WebDriver driver,WebElement element)
 		{
 			JavascriptExecutor js=(JavascriptExecutor)driver;
