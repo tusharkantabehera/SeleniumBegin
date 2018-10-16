@@ -32,7 +32,7 @@ public class BrokenLinkTest {
 			
 		}
 	
-		@Test(enabled=false)
+		@Test
 		public void testBrokenlink_1() throws MalformedURLException, IOException, InterruptedException
 		{
 			driver.get("https://www.freecrm.com");
