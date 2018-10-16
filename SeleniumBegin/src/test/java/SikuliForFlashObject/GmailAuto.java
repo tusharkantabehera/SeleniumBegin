@@ -32,9 +32,9 @@ public class GmailAuto {
 	@Test(priority = 1)
 	public void login() throws InterruptedException, FindFailed {
 		Screen screen = new Screen();
-		Pattern userName = new Pattern("D:\\Sikuli_image\\userName.png");
-		Pattern password = new Pattern("D:\\Sikuli_image\\password.png");
-		Pattern nextButton = new Pattern("D:\\Sikuli_image\\nextButton.png");
+		Pattern userName = new Pattern("give image path");
+		Pattern password = new Pattern("give image path");
+		Pattern nextButton = new Pattern("give image path");
 		screen.type(userName, "tushartesting1@gmail.com");
 		screen.click(nextButton);
 		Thread.sleep(2000);
