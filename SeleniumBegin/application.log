@@ -32,3 +32,9 @@
 2018-10-17 12:23:43,945  INFO [main] CRMPRO:33 - Waiting gor 3 sec
 2018-10-17 12:23:46,965  INFO [main] CRMPRO:53 - title varified
 2018-10-17 12:23:47,542  INFO [main] CRMPRO:68 - Browser closed
+2018-10-17 16:14:57,720  INFO [main] CRMPRO:26 - Browser opened
+2018-10-17 16:15:13,968  INFO [main] CRMPRO:26 - Browser opened
+2018-10-17 16:15:15,233  INFO [main] CRMPRO:28 - Browser maximized
+2018-10-17 16:15:15,242  INFO [main] CRMPRO:31 - Opening URL
+2018-10-17 16:15:20,638  INFO [main] CRMPRO:33 - Waiting gor 3 sec
+2018-10-17 16:15:23,645  WARN [main] CRMPRO:40 - Entering username and password
