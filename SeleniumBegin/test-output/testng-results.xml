@@ -1,49 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-10-17T06:52:40Z" name="Default suite" finished-at="2018-10-17T06:53:47Z" duration-ms="67107">
+  <suite started-at="2018-10-17T13:50:44Z" name="Default suite" finished-at="2018-10-17T13:51:01Z" duration-ms="16678">
     <groups>
     </groups>
-    <test started-at="2018-10-17T06:52:40Z" name="Default test" finished-at="2018-10-17T06:53:47Z" duration-ms="67107">
-      <class name="Log4JTest.CRMLog4j">
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:Log4JTest.CRMLog4j@729d991e]" started-at="2018-10-17T06:52:40Z" name="openUrl" finished-at="2018-10-17T06:53:06Z" duration-ms="25965" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openUrl -->
-        <test-method signature="login()[pri:0, instance:Log4JTest.CRMLog4j@729d991e]" started-at="2018-10-17T06:53:06Z" name="login" finished-at="2018-10-17T06:53:20Z" duration-ms="14482" status="PASS">
+    <test started-at="2018-10-17T13:50:44Z" name="Default test" finished-at="2018-10-17T13:51:01Z" duration-ms="16678">
+      <class name="DifferentOperations.Test">
+        <test-method signature="login()[pri:0, instance:DifferentOperations.Test@7c711375]" started-at="2018-10-17T13:50:44Z" name="login" finished-at="2018-10-17T13:51:01Z" duration-ms="16656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="exitBrowser()[pri:0, instance:Log4JTest.CRMLog4j@729d991e]" started-at="2018-10-17T06:53:20Z" name="exitBrowser" finished-at="2018-10-17T06:53:22Z" duration-ms="1251" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exitBrowser -->
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:Log4JTest.CRMLog4j@729d991e]" started-at="2018-10-17T06:53:22Z" name="openUrl" finished-at="2018-10-17T06:53:34Z" duration-ms="11950" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openUrl -->
-        <test-method signature="logoTest()[pri:0, instance:Log4JTest.CRMLog4j@729d991e]" started-at="2018-10-17T06:53:34Z" name="logoTest" finished-at="2018-10-17T06:53:34Z" duration-ms="69" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoTest -->
-        <test-method is-config="true" signature="exitBrowser()[pri:0, instance:Log4JTest.CRMLog4j@729d991e]" started-at="2018-10-17T06:53:34Z" name="exitBrowser" finished-at="2018-10-17T06:53:34Z" duration-ms="567" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exitBrowser -->
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:Log4JTest.CRMLog4j@729d991e]" started-at="2018-10-17T06:53:34Z" name="openUrl" finished-at="2018-10-17T06:53:46Z" duration-ms="12199" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openUrl -->
-        <test-method signature="titleTest()[pri:0, instance:Log4JTest.CRMLog4j@729d991e]" started-at="2018-10-17T06:53:46Z" name="titleTest" finished-at="2018-10-17T06:53:46Z" duration-ms="19" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- titleTest -->
-        <test-method is-config="true" signature="exitBrowser()[pri:0, instance:Log4JTest.CRMLog4j@729d991e]" started-at="2018-10-17T06:53:46Z" name="exitBrowser" finished-at="2018-10-17T06:53:47Z" duration-ms="576" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exitBrowser -->
-      </class> <!-- Log4JTest.CRMLog4j -->
+      </class> <!-- DifferentOperations.Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

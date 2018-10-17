@@ -20,6 +20,7 @@ public class JavascriptExecutorHandle {
 	
 	    public static WebDriver driver;
 		public static int i;
+		
 		@BeforeTest
 		public void openUrl()
 		{
@@ -31,7 +32,6 @@ public class JavascriptExecutorHandle {
 			driver.manage().deleteAllCookies();
 			driver.get("https://www.freecrm.com");
 		}
-		
 		
 		@Test(priority=1)
 		public void highlightLoginButton() throws InterruptedException
@@ -182,6 +182,19 @@ public class JavascriptExecutorHandle {
 			JavascriptExecutor js=(JavascriptExecutor)driver;
 			js.executeScript("arguments[0].scrollIntoView(true);", element);
 		}
+		
+		public static void scroll(WebDriver driver)
+		{
+			JavascriptExecutor js=(JavascriptExecutor)driver;
+			js.executeScript("scroll(0,400)");
+		}
+		
+		public static void scrollPageUpByJS(WebDriver driver)
+		{
+			JavascriptExecutor js=(JavascriptExecutor)driver;
+			js.executeScript("window.scrollTo(0,-document.body.scrollHeight)");
+		}
+		
 		//For taking screenshot
 		public static void takeScreenshot()
 		{
