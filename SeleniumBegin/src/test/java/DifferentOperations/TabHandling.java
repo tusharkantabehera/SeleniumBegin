@@ -16,9 +16,9 @@ public class TabHandling {
 		@BeforeTest
 		public void openBrowser()
 		{
-			System.setProperty("webdriver.chrome.driver", ".\\resources\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\chromedriver.exe");
 			driver=new ChromeDriver();	
-//			System.setProperty("webdriver.firefox.marionette", ".\\resources\\geckodriver.exe");
+//			System.setProperty("webdriver.firefox.marionette", ".\\src\\main\\resources\\chromedriver.exe");
 //			driver=new FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);

@@ -1,0 +1,34 @@
+2018-10-17 12:13:49,261  INFO [main] CRMPRO:26 - Browser opened
+2018-10-17 12:13:50,591  INFO [main] CRMPRO:28 - Browser maximized
+2018-10-17 12:13:50,630  INFO [main] CRMPRO:31 - Opening URL
+2018-10-17 12:13:56,106  INFO [main] CRMPRO:33 - Waiting gor 3 sec
+2018-10-17 12:14:16,228  INFO [main] CRMPRO:64 - Browser closed
+2018-10-17 12:14:18,855  INFO [main] CRMPRO:26 - Browser opened
+2018-10-17 12:14:20,510  INFO [main] CRMPRO:28 - Browser maximized
+2018-10-17 12:14:20,519  INFO [main] CRMPRO:31 - Opening URL
+2018-10-17 12:14:37,640  INFO [main] CRMPRO:33 - Waiting gor 3 sec
+2018-10-17 12:14:41,706  INFO [main] CRMPRO:64 - Browser closed
+2018-10-17 12:14:44,905  INFO [main] CRMPRO:26 - Browser opened
+2018-10-17 12:15:44,502  INFO [main] CRMPRO:26 - Browser opened
+2018-10-17 12:15:45,632  INFO [main] CRMPRO:28 - Browser maximized
+2018-10-17 12:15:45,639  INFO [main] CRMPRO:31 - Opening URL
+2018-10-17 12:15:50,018  INFO [main] CRMPRO:33 - Waiting gor 3 sec
+2018-10-17 12:22:56,395  INFO [main] CRMPRO:26 - Browser opened
+2018-10-17 12:22:57,628  INFO [main] CRMPRO:28 - Browser maximized
+2018-10-17 12:22:57,636  INFO [main] CRMPRO:31 - Opening URL
+2018-10-17 12:23:03,416  INFO [main] CRMPRO:33 - Waiting gor 3 sec
+2018-10-17 12:23:06,443  WARN [main] CRMPRO:40 - Entering username and password
+2018-10-17 12:23:17,900  INFO [main] CRMPRO:44 - Logging in
+2018-10-17 12:23:22,157  INFO [main] CRMPRO:68 - Browser closed
+2018-10-17 12:23:24,813  INFO [main] CRMPRO:26 - Browser opened
+2018-10-17 12:23:25,943  INFO [main] CRMPRO:28 - Browser maximized
+2018-10-17 12:23:25,948  INFO [main] CRMPRO:31 - Opening URL
+2018-10-17 12:23:31,109  INFO [main] CRMPRO:33 - Waiting gor 3 sec
+2018-10-17 12:23:34,177  INFO [main] CRMPRO:61 - Logo verified
+2018-10-17 12:23:34,746  INFO [main] CRMPRO:68 - Browser closed
+2018-10-17 12:23:36,782  INFO [main] CRMPRO:26 - Browser opened
+2018-10-17 12:23:38,035  INFO [main] CRMPRO:28 - Browser maximized
+2018-10-17 12:23:38,041  INFO [main] CRMPRO:31 - Opening URL
+2018-10-17 12:23:43,945  INFO [main] CRMPRO:33 - Waiting gor 3 sec
+2018-10-17 12:23:46,965  INFO [main] CRMPRO:53 - title varified
+2018-10-17 12:23:47,542  INFO [main] CRMPRO:68 - Browser closed

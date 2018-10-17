@@ -15,7 +15,7 @@ public class HeadlessChrome {
 		@BeforeTest
 		public void openUrl()
 		{
-			System.setProperty("webdriver.chrome.driver", ".\\resources\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\chromedriver.exe");
 			ChromeOptions options=new ChromeOptions();
 			options.addArguments("--headless");
 			options.addArguments("start-maximized");

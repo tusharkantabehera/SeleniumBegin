@@ -19,7 +19,7 @@ public class Base {
 	
 	public static void openBrowser()
 	{
-		System.setProperty("webdriver.chrome.driver", ".\\resources\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.get("https://gmail.com");
 		

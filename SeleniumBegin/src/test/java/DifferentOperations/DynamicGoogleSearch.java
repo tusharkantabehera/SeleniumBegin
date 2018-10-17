@@ -17,7 +17,7 @@ public class DynamicGoogleSearch {
 	@BeforeTest
 	public void openUrl() 
 	{
-		System.setProperty("webdriver.chrome.driver", ".\\resources\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);

@@ -15,7 +15,7 @@ public class JavascriptAlert {
 	@BeforeTest
 	public void openmail()
 	{
-		System.setProperty("webdriver.chrome.driver", ".\\resources\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\chromedriver.exe");
 		driver=new ChromeDriver();	
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 	}
