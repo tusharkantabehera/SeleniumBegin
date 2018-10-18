@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-10-17T13:50:44Z" name="Default suite" finished-at="2018-10-17T13:51:01Z" duration-ms="16678">
+  <suite started-at="2018-10-18T10:14:32Z" name="Default suite" finished-at="2018-10-18T10:22:33Z" duration-ms="481075">
     <groups>
     </groups>
-    <test started-at="2018-10-17T13:50:44Z" name="Default test" finished-at="2018-10-17T13:51:01Z" duration-ms="16678">
-      <class name="DifferentOperations.Test">
-        <test-method signature="login()[pri:0, instance:DifferentOperations.Test@7c711375]" started-at="2018-10-17T13:50:44Z" name="login" finished-at="2018-10-17T13:51:01Z" duration-ms="16656" status="PASS">
+    <test started-at="2018-10-18T10:14:32Z" name="Default test" finished-at="2018-10-18T10:22:33Z" duration-ms="481075">
+      <class name="HashMapUsage.CRMTest">
+        <test-method is-config="true" signature="login()[pri:0, instance:HashMapUsage.CRMTest@5ddeb7cb]" started-at="2018-10-18T10:14:32Z" name="login" finished-at="2018-10-18T10:14:42Z" duration-ms="10033" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-      </class> <!-- DifferentOperations.Test -->
+        <test-method signature="adminLogin()[pri:0, instance:HashMapUsage.CRMTest@5ddeb7cb]" started-at="2018-10-18T10:14:42Z" name="adminLogin" finished-at="2018-10-18T10:18:13Z" duration-ms="210387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:HashMapUsage.CRMTest@5ddeb7cb]" started-at="2018-10-18T10:18:13Z" name="closeBrowser" finished-at="2018-10-18T10:18:13Z" duration-ms="592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:HashMapUsage.CRMTest@5ddeb7cb]" started-at="2018-10-18T10:18:13Z" name="login" finished-at="2018-10-18T10:18:23Z" duration-ms="9219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="userLogin()[pri:0, instance:HashMapUsage.CRMTest@5ddeb7cb]" started-at="2018-10-18T10:18:23Z" name="userLogin" finished-at="2018-10-18T10:22:33Z" duration-ms="250228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:HashMapUsage.CRMTest@5ddeb7cb]" started-at="2018-10-18T10:22:33Z" name="closeBrowser" finished-at="2018-10-18T10:22:33Z" duration-ms="577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- HashMapUsage.CRMTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

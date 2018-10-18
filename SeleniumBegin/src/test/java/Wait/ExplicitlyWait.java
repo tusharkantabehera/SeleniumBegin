@@ -1,4 +1,4 @@
-package DifferentOperations;
+package Wait;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public class WaitHandle {            //Explicit wait
+public class ExplicitlyWait {           
 	
 	  WebDriver driver;
 		
@@ -26,15 +26,17 @@ public class WaitHandle {            //Explicit wait
 			driver.manage().deleteAllCookies();
 			driver.get("https://facebook.com");
 			WebElement element=driver.findElement(By.xpath("//input[@type='submit']"));
-			clickOn(driver, element, 20);
+			clickOn(driver, element, 20, 5);
 		}
 		
-
-		public static void clickOn(WebDriver driver,WebElement element,int timeout)
+		 //Explicit wait
+		public static void clickOn(WebDriver driver,WebElement element,int timeout,int poolingTime)
 		{
 			new WebDriverWait(driver, timeout)
 			.ignoring(StaleElementReferenceException.class)
+			.pollingEvery(poolingTime, TimeUnit.SECONDS)
 			.until(ExpectedConditions.elementToBeClickable(element));
 			element.click();
 		}
 }
+

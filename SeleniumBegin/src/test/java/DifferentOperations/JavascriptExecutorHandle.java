@@ -106,8 +106,6 @@ public class JavascriptExecutorHandle {
 		
 		
 		
-		
-		
 		//For highlighting a particular element with JavascriptExecutor
 		public static void flash(WebDriver driver,WebElement element) throws InterruptedException
 		{
