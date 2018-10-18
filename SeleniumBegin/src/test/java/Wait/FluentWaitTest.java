@@ -15,9 +15,9 @@ public class FluentWaitTest {
 
 	WebDriver driver;
 
-	@SuppressWarnings("deprecation")
 	@Test
-	public void testWait() {
+	public void testWait() 
+	{
 		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\chromedriver.exe");
 		driver = new ChromeDriver();
 
@@ -29,8 +29,9 @@ public class FluentWaitTest {
 				.withTimeout(30, TimeUnit.SECONDS)
 				.pollingEvery(5, TimeUnit.SECONDS)
 				.ignoring(NoSuchElementException.class);
+		
 
-		Function<WebDriver, WebElement> function = new Function<WebDriver, WebElement>() 
+/*		Function<WebDriver, WebElement> function = new Function<WebDriver, WebElement>() 
 		{
 			public WebElement apply(WebDriver driver)
 			{
@@ -39,8 +40,17 @@ public class FluentWaitTest {
 				return element;
 			}
 		};
+		
+		WebElement clickseleniumlink = wait.until(function);      */
 
-		WebElement clickseleniumlink = wait.until(function);
+		WebElement clickseleniumlink = wait.until(new Function<WebDriver, WebElement>() 
+		{
+			public WebElement apply(WebDriver driver) 
+			{
+				return driver.findElement(By.id("foo"));
+			}
+		});
+		 
 
 		clickseleniumlink.click();
 
@@ -49,26 +59,3 @@ public class FluentWaitTest {
 	}
 }
 
-/*
- * 
- * 
- * Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
- * 
- * .withTimeout(60, SECONDS)
- * 
- * .pollingEvery(2, SECONDS)
- * 
- * .ignoring(NoSuchElementException.class);
- * 
- * 
- * 
- * WebElement foo = wait.until(new Function<WebDriver, WebElement>() {
- * 
- * public WebElement apply(WebDriver driver) {
- * 
- * return driver.findElement(By.id("foo"));
- * 
- * } });
- * 
- * 
- */

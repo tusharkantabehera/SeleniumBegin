@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class DownloadFileByNaveen {
+public class DownloadFileN {
 
 	public WebDriver driver;
 	File file;
@@ -32,7 +32,7 @@ public class DownloadFileByNaveen {
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
-		driver.get("https://www.spicejet.com");
+		driver.get("");
 	}
 
 	@Test
