@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Log4JTest.CRMLog4j">
+      <class name="FileDownload.DownloadFileN">
         <methods>
-          <include name="exitBrowser"/>
-          <include name="login"/>
-          <include name="logoTest"/>
-          <include name="openUrl"/>
-          <include name="titleTest"/>
+          <include name="closeBrowser"/>
+          <include name="downloadFile"/>
+          <include name="setBrowser"/>
         </methods>
-      </class> <!-- Log4JTest.CRMLog4j -->
+      </class> <!-- FileDownload.DownloadFileN -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

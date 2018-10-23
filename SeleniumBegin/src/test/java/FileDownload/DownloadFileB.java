@@ -16,7 +16,6 @@ public class DownloadFileB {
   {
 	  System.setProperty("webdriver.firefox.marionette", ".\\src\\main\\resources\\geckodriver.exe");
 	  driver=new FirefoxDriver();
-	  driver=new FirefoxDriver();
 	  driver.get("https://filehippo.com/download_firefox/");
 	  driver.findElement(By.xpath("//span[text()='Download Latest Version']")).click();
 	  Thread.sleep(30000);

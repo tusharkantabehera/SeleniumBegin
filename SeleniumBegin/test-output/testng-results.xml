@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-10-18T10:14:32Z" name="Default suite" finished-at="2018-10-18T10:22:33Z" duration-ms="481075">
+  <suite started-at="2018-10-23T05:58:47Z" name="Default suite" finished-at="2018-10-23T05:59:36Z" duration-ms="49344">
     <groups>
     </groups>
-    <test started-at="2018-10-18T10:14:32Z" name="Default test" finished-at="2018-10-18T10:22:33Z" duration-ms="481075">
-      <class name="HashMapUsage.CRMTest">
-        <test-method is-config="true" signature="login()[pri:0, instance:HashMapUsage.CRMTest@5ddeb7cb]" started-at="2018-10-18T10:14:32Z" name="login" finished-at="2018-10-18T10:14:42Z" duration-ms="10033" status="PASS">
+    <test started-at="2018-10-23T05:58:47Z" name="Default test" finished-at="2018-10-23T05:59:36Z" duration-ms="49344">
+      <class name="DifferentOperations.BarcodeUsingZXing">
+        <test-method is-config="true" signature="login()[pri:0, instance:DifferentOperations.BarcodeUsingZXing@54a7079e]" started-at="2018-10-23T05:58:47Z" name="login" finished-at="2018-10-23T05:59:24Z" duration-ms="36411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="adminLogin()[pri:0, instance:HashMapUsage.CRMTest@5ddeb7cb]" started-at="2018-10-18T10:14:42Z" name="adminLogin" finished-at="2018-10-18T10:18:13Z" duration-ms="210387" status="PASS">
+        <test-method signature="barcodeTest()[pri:0, instance:DifferentOperations.BarcodeUsingZXing@54a7079e]" started-at="2018-10-23T05:59:24Z" name="barcodeTest" finished-at="2018-10-23T05:59:36Z" duration-ms="12099" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- adminLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:HashMapUsage.CRMTest@5ddeb7cb]" started-at="2018-10-18T10:18:13Z" name="closeBrowser" finished-at="2018-10-18T10:18:13Z" duration-ms="592" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:HashMapUsage.CRMTest@5ddeb7cb]" started-at="2018-10-18T10:18:13Z" name="login" finished-at="2018-10-18T10:18:23Z" duration-ms="9219" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="userLogin()[pri:0, instance:HashMapUsage.CRMTest@5ddeb7cb]" started-at="2018-10-18T10:18:23Z" name="userLogin" finished-at="2018-10-18T10:22:33Z" duration-ms="250228" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:HashMapUsage.CRMTest@5ddeb7cb]" started-at="2018-10-18T10:22:33Z" name="closeBrowser" finished-at="2018-10-18T10:22:33Z" duration-ms="577" status="PASS">
+        </test-method> <!-- barcodeTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:DifferentOperations.BarcodeUsingZXing@54a7079e]" started-at="2018-10-23T05:59:36Z" name="closeBrowser" finished-at="2018-10-23T05:59:36Z" duration-ms="647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- HashMapUsage.CRMTest -->
+      </class> <!-- DifferentOperations.BarcodeUsingZXing -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
