@@ -21,6 +21,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtils {
 	//public static String filename = System.getProperty("user.dir")+"\\src\\com\\qtpselenium\\xlsx\\Suite.xlsx";
+	
 	public  String path;
 	public  FileInputStream fis = null;
 	public  FileOutputStream fileOut =null;
@@ -147,7 +148,7 @@ public ExcelUtils(String path) {
 			row = sheet.getRow(rowNum-1);
 			if(row==null)
 				return "";
-			cell = row.getCell(colNum);
+			cell = row.getCell(colNum-1);
 			if(cell==null)
 				return "";
 			
@@ -245,7 +246,54 @@ public ExcelUtils(String path) {
 		}
 		
 		
+		public boolean setCellData(String sheetName,int colNum,int rowNum, String data){
+			try{
+			fis = new FileInputStream(path); 
+			workbook = new XSSFWorkbook(fis);
+
+			if(rowNum<=0)
+				return false;
+			
+			int index = workbook.getSheetIndex(sheetName);
+			if(index==-1)
+				return false;
+			
+			colNum=colNum-1;
+			sheet = workbook.getSheetAt(index);
 		
+			row=sheet.getRow(0);
+	
+			if(colNum==-1)
+				return false;
+
+			sheet.autoSizeColumn(colNum); 
+			row = sheet.getRow(rowNum-1);
+			if (row == null)
+				row = sheet.createRow(rowNum-1);
+			
+			cell = row.getCell(colNum);	
+			if (cell == null)
+		        cell = row.createCell(colNum);
+
+		    // cell style
+		    //CellStyle cs = workbook.createCellStyle();
+		    //cs.setWrapText(true);
+		    //cell.setCellStyle(cs);
+		    cell.setCellValue(data);
+
+		    fileOut = new FileOutputStream(path);
+
+			workbook.write(fileOut);
+
+		    fileOut.close();	
+
+			}
+			catch(Exception e){
+				e.printStackTrace();
+				return false;
+			}
+			return true;
+		}
 		
 		
 		// returns true if data is set successfully else false
@@ -506,14 +554,15 @@ public ExcelUtils(String path) {
 		}
 		
 		
-		
-		
+
 		
 		
 		public int getCellRowNum(String sheetName,String colName,String cellValue){
 			
-			for(int i=2;i<=getRowCount(sheetName);i++){
-		    	if(getCellData(sheetName,colName , i).equalsIgnoreCase(cellValue)){
+			for(int i=2;i<=getRowCount(sheetName);i++) 
+			{
+		    	if(getCellData(sheetName,colName , i).equalsIgnoreCase(cellValue))
+		    	{
 		    		return i;
 		    	}
 		    }
@@ -522,19 +571,5 @@ public ExcelUtils(String path) {
 		}
 			
 		
-
-		
-		// to run this on stand alone
-		public static void main(String arg[]) throws IOException{
-			
-			//System.out.println(filename);
-			ExcelUtils datatable = null;
-			
-
-				 datatable = new ExcelUtils(System.getProperty("user.dir")+"\\src\\com\\qtpselenium\\xls\\Controller.xlsx");
-					for(int col=0 ;col< datatable.getColumnCount("TC5"); col++){
-						System.out.println(datatable.getCellData("TC5", col, 1)); 
-					} 
-		}
 }
 

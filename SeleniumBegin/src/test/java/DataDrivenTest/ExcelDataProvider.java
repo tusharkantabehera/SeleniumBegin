@@ -1,5 +1,7 @@
 package DataDrivenTest;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -9,13 +11,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class ReadTest {
+public class ExcelDataProvider {
+    public static WebDriver driver;
 	
-	    public static WebDriver driver;
-		
-		@BeforeClass(enabled=true)
+		@BeforeClass(enabled=false)
 		public void openUrl() throws InterruptedException
 		{
 			System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\chromedriver.exe");
@@ -28,16 +30,15 @@ public class ReadTest {
 			Thread.sleep(3000);
 		}
 		
-		@Test()
-		public void signupTest() 
+		@DataProvider
+		public Iterator<Object[]> getTestData()
 		{
-			ExcelUtils excel=new ExcelUtils(".\\src\\test\\java\\DataDrivenTest\\TestData.xlsx");
-			String firstname=excel.getCellData("crmtest", "firstname", 2);
-			String lastname=excel.getCellData("crmtest", "lastname", 2);
-			String email=excel.getCellData("crmtest", "email", 2);
-			String username=excel.getCellData("crmtest", "username", 2);
-			String password=excel.getCellData("crmtest", "password", 2);
-			
+			return getExcelData().iterator();
+		}
+		
+		@Test(dataProvider="getTestData")
+		public void signInTest(String firstname,String lastname,String email,String username,String password) 
+		{	
 			driver.findElement(By.linkText("Sign Up")).click();
 			WebElement dropdown=driver.findElement(By.name("payment_plan_id"));
 			Select select=new Select(dropdown);
@@ -53,9 +54,32 @@ public class ReadTest {
 			
 		}
 		
-		@AfterClass(enabled=true)
+		@AfterClass(enabled=false)
 		public void closeBrowser()
 		{
 			driver.quit();
+		}
+		
+		
+		
+		
+		public static ArrayList<Object[]> getExcelData()
+		{
+			ArrayList<Object[]> myData=new ArrayList<Object[]>();
+			
+			ExcelUtils excel=new ExcelUtils(".\\src\\test\\java\\DataDrivenTest\\TestData.xlsx");
+			int rowcount=excel.getRowCount("crmtest");
+
+			for(int row=2;row<=rowcount;row++)
+			{
+				String firstname=excel.getCellData("crmtest", "firstname", row);
+				String lastname=excel.getCellData("crmtest", "lastname", row);
+				String email=excel.getCellData("crmtest", "email", row);
+				String username=excel.getCellData("crmtest", "username", row);
+				String password=excel.getCellData("crmtest", "password", row);		
+				myData.add(new Object[] {firstname,lastname,email,username,password});
+			}
+			return myData;
+			
 		}
 }

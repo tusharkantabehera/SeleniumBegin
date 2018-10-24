@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-10-24T07:55:09Z" name="Default suite" finished-at="2018-10-24T08:05:22Z" duration-ms="612911">
+  <suite started-at="2018-10-24T12:10:13Z" name="Default suite" finished-at="2018-10-24T12:10:52Z" duration-ms="39256">
     <groups>
     </groups>
-    <test started-at="2018-10-24T07:55:09Z" name="Default test" finished-at="2018-10-24T08:05:22Z" duration-ms="612911">
-      <class name="DataDrivenTest.ParameterizedTest">
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:DataDrivenTest.ParameterizedTest@3e08ff24]" started-at="2018-10-24T07:55:09Z" name="openUrl" finished-at="2018-10-24T07:55:25Z" duration-ms="15889" status="PASS">
+    <test started-at="2018-10-24T12:10:13Z" name="Default test" finished-at="2018-10-24T12:10:52Z" duration-ms="39256">
+      <class name="DataDrivenTest.WebTableToExcel">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:DataDrivenTest.WebTableToExcel@82de64a]" started-at="2018-10-24T12:10:13Z" name="openUrl" finished-at="2018-10-24T12:10:33Z" duration-ms="20514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="signupTest()[pri:0, instance:DataDrivenTest.ParameterizedTest@3e08ff24]" started-at="2018-10-24T07:55:25Z" name="signupTest" finished-at="2018-10-24T08:05:22Z" duration-ms="596327" status="PASS">
+        <test-method signature="getTableData()[pri:0, instance:DataDrivenTest.WebTableToExcel@82de64a]" started-at="2018-10-24T12:10:33Z" name="getTableData" finished-at="2018-10-24T12:10:51Z" duration-ms="18018" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signupTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:DataDrivenTest.ParameterizedTest@3e08ff24]" started-at="2018-10-24T08:05:22Z" name="closeBrowser" finished-at="2018-10-24T08:05:22Z" duration-ms="664" status="PASS">
+        </test-method> <!-- getTableData -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:DataDrivenTest.WebTableToExcel@82de64a]" started-at="2018-10-24T12:10:51Z" name="closeBrowser" finished-at="2018-10-24T12:10:52Z" duration-ms="627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- DataDrivenTest.ParameterizedTest -->
+      </class> <!-- DataDrivenTest.WebTableToExcel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
