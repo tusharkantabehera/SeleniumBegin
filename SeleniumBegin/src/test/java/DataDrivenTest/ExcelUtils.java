@@ -1,11 +1,10 @@
-package ExcelReadWrite;
+package DataDrivenTest;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
 
-import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.Cell;
@@ -20,7 +19,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ExcelNaveen {
+public class ExcelUtils {
 	//public static String filename = System.getProperty("user.dir")+"\\src\\com\\qtpselenium\\xlsx\\Suite.xlsx";
 	public  String path;
 	public  FileInputStream fis = null;
@@ -31,7 +30,7 @@ public class ExcelNaveen {
 	private XSSFCell cell = null;
 	
 	
-public ExcelNaveen(String path) {
+public ExcelUtils(String path) {
 		
 		this.path=path;
 		try {
@@ -41,7 +40,7 @@ public ExcelNaveen(String path) {
 			fis.close();
 		} catch (Exception e)
 		{
-					e.printStackTrace();
+			e.printStackTrace();
 		}
 		}	
 		// returns the row count in a sheet
@@ -59,6 +58,9 @@ public ExcelNaveen(String path) {
 			
 		}
 		// returns the data from a cell
+		
+		
+		
 		
 		
 		public String getCellData(String sheetName,String colName,int rowNum){
@@ -126,6 +128,9 @@ public ExcelNaveen(String path) {
 		}
 		
 				
+		
+		
+		
 		// returns the data from a cell
 		public String getCellData(String sheetName,int colNum,int rowNum){
 			try{
@@ -179,6 +184,9 @@ public ExcelNaveen(String path) {
 				return "row "+rowNum+" or column "+colNum +" does not exist  in xls";
 			}
 		}
+		
+		
+		
 		
 		
 		// returns true if data is set successfully else false
@@ -235,8 +243,13 @@ public ExcelNaveen(String path) {
 			}
 			return true;
 		}
+		
+		
+		
+		
+		
 		// returns true if data is set successfully else false
-		/*public boolean setCellData(String sheetName,String colName,int rowNum, String data,String url){
+		public boolean setCellData(String sheetName,String colName,int rowNum, String data,String url){
 			//System.out.println("setCellData setCellData******************");
 			try{
 			fis = new FileInputStream(path); 
@@ -300,7 +313,10 @@ public ExcelNaveen(String path) {
 			}
 			return true;
 		}
-		*/
+	
+		
+		
+		
 
 		// returns true if sheet is created successfully else false
 		public boolean addSheet(String  sheetname){		
@@ -317,6 +333,10 @@ public ExcelNaveen(String path) {
 			}
 			return true;
 		}
+		
+		
+		
+		
 		
 		// returns true if sheet is removed successfully else false if sheet does not exist
 		public boolean removeSheet(String sheetName){		
@@ -336,6 +356,12 @@ public ExcelNaveen(String path) {
 			}
 			return true;
 		}
+		
+		
+		
+		
+		
+		
 		// returns true if column is created successfully
 		public boolean addColumn(String sheetName,String colName){
 			//System.out.println("**************addColumn*********************");
@@ -378,9 +404,12 @@ public ExcelNaveen(String path) {
 			}
 			
 			return true;
-			
-			
 		}
+		
+		
+		
+		
+		
 		// removes a column and all the contents
 		public boolean removeColumn(String sheetName, int colNum) {
 			try{
@@ -415,8 +444,12 @@ public ExcelNaveen(String path) {
 				return false;
 			}
 			return true;
-			
 		}
+		
+		
+		
+		
+		
 	  // find whether sheets exists	
 		public boolean isSheetExist(String sheetName){
 			int index = workbook.getSheetIndex(sheetName);
@@ -443,11 +476,14 @@ public ExcelNaveen(String path) {
 			if(row==null)
 				return -1;
 			
-			return row.getLastCellNum();
-			
-			
-			
+			return row.getLastCellNum();		
 		}
+		
+		
+		
+		
+		
+		
 		//String sheetName, String testCaseName,String keyword ,String URL,String message
 		public boolean addHyperLink(String sheetName,String screenShotColName,String testCaseName,int index,String url,String message){
 			//System.out.println("ADDING addHyperLink******************");
@@ -466,9 +502,14 @@ public ExcelNaveen(String path) {
 		    	}
 		    }
 
-
 			return true; 
 		}
+		
+		
+		
+		
+		
+		
 		public int getCellRowNum(String sheetName,String colName,String cellValue){
 			
 			for(int i=2;i<=getRowCount(sheetName);i++){
@@ -480,17 +521,20 @@ public ExcelNaveen(String path) {
 			
 		}
 			
+		
+
+		
 		// to run this on stand alone
 		public static void main(String arg[]) throws IOException{
 			
 			//System.out.println(filename);
-			ExcelNaveen datatable = null;
+			ExcelUtils datatable = null;
 			
 
-				/* datatable = new Xls_Reader(System.getProperty("user.dir")+"\\src\\com\\qtpselenium\\xls\\Controller.xlsx");
+				 datatable = new ExcelUtils(System.getProperty("user.dir")+"\\src\\com\\qtpselenium\\xls\\Controller.xlsx");
 					for(int col=0 ;col< datatable.getColumnCount("TC5"); col++){
 						System.out.println(datatable.getCellData("TC5", col, 1)); 
-					} */
+					} 
 		}
 }
 

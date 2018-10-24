@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-10-23T05:58:47Z" name="Default suite" finished-at="2018-10-23T05:59:36Z" duration-ms="49344">
+  <suite started-at="2018-10-24T07:55:09Z" name="Default suite" finished-at="2018-10-24T08:05:22Z" duration-ms="612911">
     <groups>
     </groups>
-    <test started-at="2018-10-23T05:58:47Z" name="Default test" finished-at="2018-10-23T05:59:36Z" duration-ms="49344">
-      <class name="DifferentOperations.BarcodeUsingZXing">
-        <test-method is-config="true" signature="login()[pri:0, instance:DifferentOperations.BarcodeUsingZXing@54a7079e]" started-at="2018-10-23T05:58:47Z" name="login" finished-at="2018-10-23T05:59:24Z" duration-ms="36411" status="PASS">
+    <test started-at="2018-10-24T07:55:09Z" name="Default test" finished-at="2018-10-24T08:05:22Z" duration-ms="612911">
+      <class name="DataDrivenTest.ParameterizedTest">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:DataDrivenTest.ParameterizedTest@3e08ff24]" started-at="2018-10-24T07:55:09Z" name="openUrl" finished-at="2018-10-24T07:55:25Z" duration-ms="15889" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="barcodeTest()[pri:0, instance:DifferentOperations.BarcodeUsingZXing@54a7079e]" started-at="2018-10-23T05:59:24Z" name="barcodeTest" finished-at="2018-10-23T05:59:36Z" duration-ms="12099" status="PASS">
+        </test-method> <!-- openUrl -->
+        <test-method signature="signupTest()[pri:0, instance:DataDrivenTest.ParameterizedTest@3e08ff24]" started-at="2018-10-24T07:55:25Z" name="signupTest" finished-at="2018-10-24T08:05:22Z" duration-ms="596327" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- barcodeTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:DifferentOperations.BarcodeUsingZXing@54a7079e]" started-at="2018-10-23T05:59:36Z" name="closeBrowser" finished-at="2018-10-23T05:59:36Z" duration-ms="647" status="PASS">
+        </test-method> <!-- signupTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:DataDrivenTest.ParameterizedTest@3e08ff24]" started-at="2018-10-24T08:05:22Z" name="closeBrowser" finished-at="2018-10-24T08:05:22Z" duration-ms="664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- DifferentOperations.BarcodeUsingZXing -->
+      </class> <!-- DataDrivenTest.ParameterizedTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
